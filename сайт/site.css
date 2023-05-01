@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f2f4f6 url(https://ab-w.net/images/sss.jpg) 0 20px;
+
+}
+
+/* Style the header */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 60%;
+}
+@media screen and (max-width: 1200px) {
+  .row {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .row {
+    width: 100%;
+  }
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  font-size: 20px;
+  width: 100%
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #ffffff;
+  width: 100%;
+  height: 200px;
+  object-fit: scale-down;
+}
+
+@media screen and (max-width: 700px) {
+  .fakeimg {
+    object-fit: scale-down;
+  }
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+h5 {
+  margin-bottom: 0;
+}
